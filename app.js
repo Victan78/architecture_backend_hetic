@@ -15,7 +15,7 @@ AWS.config.update({
 });
 
 export const replicate = new Replicate({
-  auth: 'r8_Edq57Jf3KHd7vHTmldNj9FtCR6vCxPN28w5vL',
+  auth: process.env.REPLICATE_API_TOKEN,
   userAgent: 'https://www.npmjs.com/package/create-replicate'
 })
 
